@@ -1,0 +1,35 @@
+.plant-item {
+    display: block;
+    position: relative;
+    width: 250px;
+    border-radius: 12px;
+}
+
+.cover {
+    display: block;
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+}
+
+.add-to-cart {
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    background-color: rgb(49, 181, 114);
+    color: #fff;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .plant-item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .plant-item {
+        width: calc(25% - 5px);
+    }
+}
