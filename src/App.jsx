@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "./app.css"
 import Banner from "./components/Banner"
 import Cart from "./components/Cart"
@@ -10,10 +10,14 @@ const App = () => {
   
   const [cart, updateCart] = useState([])
 
+  useEffect(() => {
+    document.title = "La maison de la jungle"
+  }, [])
+
   return <>
     <Banner />
     <div className="container">
-      <button onClick={e => setIsShow(v => !v)}>{isShow ? "Masquer" : "Afficer"} le panier</button>
+      <button className="show-hide-cart-btn" onClick={e => setIsShow(v => !v)}>{isShow ? "Masquer" : "Afficer"} le panier</button>
       <ShoppingList cart={cart} updateCart={updateCart} />
       {isShow && <Cart cart={cart} updateCart={updateCart} />}
     </div>

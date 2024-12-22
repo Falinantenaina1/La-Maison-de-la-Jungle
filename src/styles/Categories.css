@@ -1,0 +1,13 @@
+.categories {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    color: rgb(49, 181, 114);
+    border: 1px solid rgb(49, 181, 114);
+    outline-style: none;
+    border-radius: 6px;
+}
+
+.categories:focus {
+    border: 1px solid rgb(49, 181, 114);
+}

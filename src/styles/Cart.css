@@ -1,16 +1,35 @@
 .cart {
     position: fixed;
-    background: rgb(49, 181, 114);
+    background: rgba(49, 181, 114, 0.9);
+    right: 0;
     color: #fff;
+    font-weight: 500;
     padding: 20px;
-    top: 25px;
-    right: 18px;
+    top: 120px;
+    right: 0px;
     width: 250px;
     border-radius: 12px 0 12px 12px;
     box-shadow: -2px 2px 5px 2px #fff;
+    z-index: 1000;
 }
 
 
 .cart li {
-    margin-top: 5px;
+    margin-top: 10px;
+    list-style-type: disc;
+    list-style-position: inside
+}
+
+.total {
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.reset-cart {
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    margin: 0 auto;
+    display: block;
 }

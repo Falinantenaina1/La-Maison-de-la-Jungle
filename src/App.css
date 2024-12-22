@@ -6,4 +6,21 @@
 
 .container {
     position: relative;
+    padding-top: 120px;
+}
+
+.show-hide-cart-btn {
+    border: none;
+    border-radius: 0 0 0 8px;
+    background: rgba(49, 181, 114,.8);
+    position: fixed;
+    padding: 5px;
+    color: #fff;
+    top: 90.5px;
+    right: 0;
+    z-index: 1000;
+}
+
+.show-hide-cart-btn:hover {
+    background: rgba(49, 181, 114, .8);
 }
